@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>글 작성</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">돌아가기</span>
+            <h2>글 작성</h2>
+            <form action="create_post" method="POST"> 
+                <label for="title">제목:</label>
+                <input type="text" id="title" name="title">
+
+                <label for="author">작성자:</label>
+                <input type="text" id="author" name="author">
+
+                <label for="content">내용:</label>
+                <textarea id="content" name="content"></textarea>
+
+                <button type="submit">작성 완료</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

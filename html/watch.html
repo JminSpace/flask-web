@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시물 상세</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">게시물 상세</h1>
+    </header>
+
+    <div class="post-details">
+        <h2>{{ post.title }}</h2>
+        <p>작성자: {{ post.author }}</p>
+        <p>작성일: {{ post.time }}</p>
+        <p>내용: {{ post.content }}</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
